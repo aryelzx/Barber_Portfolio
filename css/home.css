@@ -1,0 +1,296 @@
+* {
+    font-family: "Josefin Sans";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color: rgb(34,34,34);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    max-width: 1170px;
+    padding: 1.5rem 0;
+    margin-left: 3rem;
+    height: 10rem;
+  }
+  hr{
+   display: none;
+  }
+  
+  /* Logo */
+  .logoimg{
+    width: 100%;
+    object-fit: cover;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    }
+    .logoimg:hover{
+      transform: scale(1.05);
+      transition: .5s;
+    }
+  .logomobile{
+    display: none;
+  }
+  
+  body ul {
+    list-style: none;
+  }
+  body a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.4s;
+  }
+  /* Menu */
+  .header-navbar ul {
+    height: 100%;
+    display: flex;   
+    align-items: center;
+    margin-left: 4rem;
+    position: relative;
+    max-width: 40%;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+  .header-navbar ul li {
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+  .header-navbar ul li:hover{
+    transform: scale(1.05);
+    transition: .5s;
+  }
+
+  .header-navbar ul li a{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin: 0 1rem;
+    color: #f3f3f3;
+    text-decoration-line: underline;
+    text-decoration-color: #ECB365;   
+  } 
+  .header-navbar ul li a:hover {
+    color: #ccc;
+    
+  }
+  
+/*================ body =================*/
+main{ 
+  display: flex;
+  flex-direction: row;
+  margin-top:50px;
+}
+h2{
+  font-size:46px;
+  margin-left: 3rem;
+  line-height: 60px;
+  color: #ccc;
+  text-shadow: rgba(172, 126, 2, 0.44) 0px -3px 24px;
+}
+span{
+  /* color: rgba(255,187,15,0.48);  */
+  color: #ECB365;
+  font-size: 60px;
+}
+p{ 
+margin: 1.1rem 3rem;
+line-height: 20px;
+max-width:500px;
+color: #ccc;
+}
+.imgindex{ 
+  width: fit-content;
+  border-radius: 10px;
+  height: 350px;
+  display: flex;
+  margin-left: 3rem; 
+}
+i{
+  color: #ccc;
+}
+.map{
+  width: 50%;
+  height: 40%;
+  margin: 0 3rem;
+}
+/* ================== MEDIA ============== */
+/* mobile */
+/* header & body */
+@media (max-width: 767px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -3rem;
+    max-width: 1170px;
+    height: 8rem;
+    justify-content: space-evenly;
+    background-color: rgb(34,34,34);
+  }
+  /*Servicos & Agendamento & Contato*/
+    .header-navbar{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 1170px;
+      height: 8rem;
+      justify-content: space-evenly;
+    }
+    .header-navbar ul{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .header-navbar ul li {
+      display: flex;
+      justify-content: center;
+      font-weight: 300;   
+    }
+    .header-navbar ul li a {
+      font-size: 1rem;  
+      color: #ccc;
+      margin: 0 0.5rem;
+      text-decoration-style: "solid";
+      text-decoration-line: underline;
+      text-decoration-thickness: 1px;
+      text-decoration-color: rgba(255,187,15,0.48);
+      transition: 0.4s;
+    }
+  .body{
+    background-color: #f3f3f3;
+  }
+  hr{
+    display: flex;
+    width: 100%;
+  }
+  .image img{
+    display: none;
+  }
+/* main */
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+  span{
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  h2{
+    font-size:1.6rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+  }
+  p{
+    line-height: 1.6rem;
+    max-width: 300px;
+    font-weight: 300;
+  }
+  .header img{
+    width: 50%;
+    object-fit: fill; 
+  }
+  .logomobile{
+    display: flex;
+    justify-content: center;
+    margin-left: 9rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+  .logomobile:hover{
+    transform: scale(1.05);
+    transition: .5s;
+  }
+  .logoimg{
+    display: none;
+  }
+}
+/* tablet */
+@media screen and (min-width:767px) and (max-width:1023px){
+  .header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(34,34,34);
+  }
+  /*Servicos & Agendamento & Contato*/
+    .header-navbar ul{
+      display: flex;
+      margin-right: 3rem;
+    }
+    .header-navbar ul li {
+      display: flex;
+      font-weight: 300;   
+    }
+    .header-navbar ul li a {
+      font-size: 1rem;  
+      color: #ccc;
+      margin: 0 0.5rem;
+      text-decoration-style: "solid";
+      text-decoration-line: underline;
+      text-decoration-thickness: 1px;
+      text-decoration-color: rgba(255,187,15,0.48);
+      transition: 0.4s;
+    }
+  .body{
+    background-color: #f3f3f3;
+  }
+  hr{
+    display: flex;
+    width: 100%;
+  }
+  .image img{
+    display: none;
+  }
+}
+/* desktop */
+@media screen and (min-width:1024px) and (max-width:1199px){
+  .header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(34,34,34);
+  }
+  /*Servicos & Agendamento & Contato*/
+    .header-navbar ul{
+      display: flex;
+      margin-right: 3rem;
+    }
+    .header-navbar ul li {
+      display: flex;
+      font-weight: 300;   
+    }
+    .header-navbar ul li a {
+      font-size: 1rem;  
+      color: #ccc;
+      margin: 0 0.5rem;
+      text-decoration-style: "solid";
+      text-decoration-line: underline;
+      text-decoration-thickness: 1px;
+      text-decoration-color: rgba(255,187,15,0.48);
+      transition: 0.4s;
+    }
+  .body{
+    background-color: #f3f3f3;
+  }
+  hr{
+    display: flex;
+    width: 100%;
+  }
+  .image img{
+    display: none;
+  }
+}

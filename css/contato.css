@@ -1,0 +1,452 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Archivo', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: "grafiti";
+  src: url('../fonts/Graffiti\ City.otf'); 
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  background-color: rgb(34,34,34);
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  align-items: center;
+  color: #f3f3f3;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  max-height: 12rem;
+  max-width: 1170px;
+}
+.image{
+  
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.image:hover{
+  transform: scale(1.1);
+}
+
+header a {
+  max-width: fit-content;
+  background-color: #f3f3f3; 
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  padding: 13px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 14rem;
+  margin-top: 5rem;
+  height: 40px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+header a{
+  text-decoration: none;
+}
+header a:hover {
+  background-color: #ECB365;
+  color: black;
+}
+main{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+/* modal */
+.contato{
+  background-image: linear-gradient(45deg, #735F32, rgb(66, 66, 66));
+  border-radius: 10px;
+  padding:15px;
+  width: 65vw;
+  height: 65vh;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 5px 5px 10px rgba(89, 71, 5, 0.363);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+
+}
+.social{
+    display: block;
+    max-width: 100%;
+    padding: 1rem;
+  }
+  .social-title img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid #f3f3f3;
+    display: flex;
+    justify-content: left; 
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+  .social-title img:hover{
+    transform: scale(1.1);
+  }
+  .social-title{
+    display: flex;
+    text-align: center;
+    color: #f3f3f3;
+    gap: 1rem;    
+  }
+  .social-title h1{
+    font-family: 'grafiti';
+    font-size: 3rem;
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-align: start;
+    justify-content: center;
+    margin: 1rem 1rem;
+  }
+  .informacoes{
+    display: flex;
+    max-width: 100%;
+    height: 32vh;
+    border-top: 1px solid #ccc;
+    flex-direction: column;
+    margin-top: .5rem; 
+  }
+  .informacoes .insta,
+  .informacoes .whatsapp,
+  .informacoes .email{
+    display: flex;
+    max-width: 100%;
+    max-height: 10vh;
+    flex-direction: row;
+    gap: .5rem;
+    text-align: center;
+   
+  }
+  .informacoes p{
+    font-family: 'grafiti';
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #f3f3f3;
+    margin-top: 3.2rem;
+    
+  }
+  .informacoes a{
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+  }
+  .informacoes img{
+    width: 45px;
+    height: 45px;
+    margin-top: 2.5rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+  .whatsapp img{
+    width: 50px;
+    height: 50px;
+    margin-top: 2.5rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+  .informacoes img:hover{
+    transform: scale(1.1);
+  }
+  .informacoes h4{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: #f3f3f3;
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .mapa{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    max-height: 90%;
+    margin: 1rem 0;
+  }
+  .map{
+    width: 85%;
+    height: 45vh;
+    border-radius: 10px;
+    justify-content: center;
+    margin: 0 4rem;
+  }
+  .mapa p{
+    font-family: 'grafiti';
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #f3f3f3;
+    margin: 10px 4rem;
+  }
+  .mapa i{
+    width: 10px;
+    height: 10px;
+  }
+  .informobile{
+    display: none;
+  }
+/* ======== MEDIA ========= */
+/* mobile */
+@media screen and (max-width: 767px) {
+  body{
+    padding: 2rem;
+    height: auto;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  header{
+    display: flex;
+    flex-direction: column;
+  }
+  header a{
+    display: flex;
+    height: 2rem;
+    text-align: center;
+    padding: 8px;
+    margin-top: 1rem;
+  }
+  header img{
+    width: 100%;
+    object-fit: fill; 
+  }
+  .informobile{
+    display: flex; 
+  }
+  .infor{
+    display: none;
+  }
+  .logomobile{
+    display: flex;
+    justify-content: center;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+  .contato{
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+  }
+  .social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .social-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-title img{
+    width: 70px;
+    height: 70px;
+  }
+  .social-title h1{
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  .informacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 1rem;
+  }
+  .whatsapp img{
+    width: 40px;
+    height: 40px;
+    margin-top: 1rem;
+  }
+  .informacoes img{
+    width: 35px;
+    height: 35px;
+    margin-top: 1rem;
+  }
+  .informacoes p{
+    font-family: "Josefin sans";
+    font-size: 1.5rem;
+    line-height: 1.3rem;
+    max-width: fit-content;
+    font-weight: 300;
+    margin-top: 1.5rem;
+    text-shadow: rgba(172, 126, 2, 0.44) 0px -3px 24px;
+  }
+  .informacoes .whatsapp .informobile{
+    font-size: 1.3rem;
+  }
+  .informacoes .email .informobile{
+    font-size: 1.2rem;
+    line-height: .9rem;
+    margin-top: 1.6rem;
+  }
+  .informacoes .email{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  .informacoes .insta,
+  .informacoes .whatsapp,
+  .informacoes .email{
+    display: flex;
+    margin-top: 1rem;
+  }
+  .informacoes h4{
+    display: flex;
+    width: 100%;
+    height: 10px;
+    font-family: "Josefin sans";
+    font-weight: 30;
+    margin-top: 1rem ;
+    font-size: 1rem;
+    justify-content: center;
+  }
+  .mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: none;
+    margin-top: 2.3rem;
+  }
+  .map{
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+    margin: 0 auto;
+  }
+  .mapa p{
+    font-size: 1rem;
+    margin: 10px 1rem;
+  }
+  .mapa i{
+    width: 10px;
+    height: 10px;
+  }
+}
+/* tablet */
+@media screen and (min-width:767px) and (max-width:1023px){
+  body{
+    padding: 2rem;
+    height: auto;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  header{
+    display: flex;
+  }
+  header a{
+    display: flex;
+    height: 2rem;
+    text-align: center;
+    padding: 8px;
+    margin: 1rem 3rem;
+  }
+  header img{
+    width: 100%;
+    object-fit: fill; 
+  }
+  .informobile{
+    display: flex; 
+  }
+  .infor{
+    display: none;
+  }
+  .logomobile{
+    display: flex;
+    justify-content: center;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+  .contato{
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+  }
+  .social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .social-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-title img{
+    width: 70px;
+    height: 70px;
+  }
+  .social-title h1{
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  .informacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 1rem;
+  }
+  .whatsapp img{
+    width: 40px;
+    height: 40px;
+    margin-top: 1rem;
+  }
+  .informacoes img{
+    width: 35px;
+    height: 35px;
+    margin-top: 1rem;
+  }
+  .informacoes p{
+    font-family: "Josefin sans";
+    font-size: 1.5rem;
+    line-height: 1.3rem;
+    max-width: 300px;
+    font-weight: 300;
+    margin-top: 1.5rem;
+    text-shadow: rgba(172, 126, 2, 0.44) 0px -3px 24px;
+  }
+  .mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: none;
+    margin-top: 1rem;
+  }
+}
