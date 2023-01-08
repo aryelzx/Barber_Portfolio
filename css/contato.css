@@ -92,7 +92,7 @@ main{
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    border: 1px solid #f3f3f3;
+    border: 1px solid #ccc;
     display: flex;
     justify-content: left; 
     transition-property: all;
@@ -135,7 +135,6 @@ main{
     flex-direction: row;
     gap: .5rem;
     text-align: center;
-   
   }
   .informacoes p{
     font-family: 'grafiti';
@@ -153,31 +152,22 @@ main{
   }
   .informacoes img{
     width: 45px;
-    height: 45px;
     margin-top: 2.5rem;
     transition-property: all;
-    transition-duration: 1s;
+    transition-duration: .6s;
     transition-timing-function: ease;
     transition-delay: 0s;
+    filter: invert(5%) sepia(10%) saturate(2901%) hue-rotate(346deg) brightness(94%) contrast(94%); 
   }
-  .whatsapp img{
-    width: 50px;
-    height: 50px;
-    margin-top: 2.5rem;
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-  }
-  .informacoes img:hover{
+    .informacoes img:hover{
     transform: scale(1.1);
   }
-  .informacoes h4{
+  .aviso{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
     font-size: 1.3rem;
     color: #f3f3f3;
-    margin-top: 3rem;
+    margin-top: 2rem;
     text-align: center;
   }
   .mapa{
@@ -228,21 +218,28 @@ main{
     flex-direction: column;
   }
   header a{
-    display: flex;
-    height: 2rem;
-    text-align: center;
-    padding: 8px;
-    margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  opacity: 0.8;
+  color: #E5E5CB;
+  padding : .3rem 4rem;
+  background-color: #1A120B;
+  border: 1px solid #a8a894;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  width: 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+  }
+  header a:hover{
+    opacity: 1;
+    background-color: #E5E5CB;
+    color: #1A120B;
   }
   header img{
     width: 100%;
-    object-fit: fill; 
-  }
-  .informobile{
-    display: flex; 
-  }
-  .infor{
-    display: none;
   }
   .logomobile{
     display: flex;
@@ -260,8 +257,7 @@ main{
   .social{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    max-width: 100%;
   }
   .social-title{
     display: flex;
@@ -269,73 +265,67 @@ main{
     align-items: center;
   }
   .social-title img{
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
   }
   .social-title h1{
     font-size: 2rem;
-    margin: 1rem 0;
+    margin: .5rem 0;
   }
   .informacoes{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    margin-top: 1rem;
-  }
-  .whatsapp img{
-    width: 40px;
-    height: 40px;
-    margin-top: 1rem;
+    margin: 0;
+    max-width: 100%;	
+    height: 100%;
   }
   .informacoes img{
     width: 35px;
     height: 35px;
-    margin-top: 1rem;
+    margin-top: .5rem;
   }
   .informacoes p{
     font-family: "Josefin sans";
-    font-size: 1.5rem;
-    line-height: 1.3rem;
-    max-width: fit-content;
+    font-size: 1.2rem;
     font-weight: 300;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     text-shadow: rgba(172, 126, 2, 0.44) 0px -3px 24px;
   }
-  .informacoes .whatsapp .informobile{
-    font-size: 1.3rem;
+  .informacoes .whatsapp p{
+    font-size: 1rem;
   }
-  .informacoes .email .informobile{
-    font-size: 1.2rem;
-    line-height: .9rem;
-    margin-top: 1.6rem;
-  }
-  .informacoes .email{
+  .informacoes .email p{
     display: flex;
     justify-content: center;
     align-items: start;
+    font-size: 1rem;
+  }
+  .informacoes .email img{
+    width: 30px;
+    height: 30px;
+    margin-left: -4px;
   }
   .informacoes .insta,
   .informacoes .whatsapp,
   .informacoes .email{
     display: flex;
-    margin-top: 1rem;
+    gap: 0;
+    text-align: start;
+    margin-left: -1rem;
   }
-  .informacoes h4{
-    display: flex;
-    width: 100%;
-    height: 10px;
-    font-family: "Josefin sans";
-    font-weight: 30;
-    margin-top: 1rem ;
+  .informacoes .email{
+    gap: 5px;
+  }
+  .aviso{
+    font-weight: 300;
+    margin-top: 1rem;
+    margin-left: -.8rem;
     font-size: 1rem;
-    justify-content: center;
+    width: 110%;
   }
   .mapa{
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: none;
-    margin-top: 2.3rem;
   }
   .map{
     justify-content: center;
@@ -379,12 +369,6 @@ main{
     width: 100%;
     object-fit: fill; 
   }
-  .informobile{
-    display: flex; 
-  }
-  .infor{
-    display: none;
-  }
   .logomobile{
     display: flex;
     justify-content: center;
@@ -417,17 +401,6 @@ main{
     font-size: 2rem;
     margin: 1rem 0;
   }
-  .informacoes{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    margin-top: 1rem;
-  }
-  .whatsapp img{
-    width: 40px;
-    height: 40px;
-    margin-top: 1rem;
-  }
   .informacoes img{
     width: 35px;
     height: 35px;
@@ -448,5 +421,38 @@ main{
     align-items: center;
     max-width: none;
     margin-top: 1rem;
+  }
+}
+/* desktop */
+@media screen and (min-width:1024px) and (max-width:1365px){
+  .aviso{
+    font-weight: 30;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    justify-content: center;
+  }
+  .mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: none;
+    margin-top: 1rem;
+  }
+  .mapa p{
+    font-size: 1rem;
+    margin: 10px 1rem;
+  }
+  .map{
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+  }
+  .image{
+    margin-left: -7rem;
+  }
+  body{
+    padding: 2rem;
+    height: auto;
   }
 }
