@@ -5,7 +5,11 @@
   box-sizing: border-box;
 }
 body{
-  background-color: rgb(34,34,34);
+  background-image: url(../img/pattern_waves-1_0.5_2_0-1.5_20_1__212121_715e32.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -146,6 +150,7 @@ main{
   padding: 0px 20px;
   transition: .8s;
   transform: translateY(-100px);
+  background-color: rgb(34,34,34);
   box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
 
@@ -183,6 +188,7 @@ hr{
 }
 /* ======== MEDIA ============= */
 @media screen and (max-width: 768px) {
+  
   .header {
     display: flex;
     flex-direction: column;
@@ -191,7 +197,6 @@ hr{
     max-width: 1170px;
     height: 8rem;
     justify-content: space-evenly;
-    background-color: rgb(34,34,34);
   }
   /*Servicos & Agendamento & Contato*/
   .header-navbar{
@@ -218,9 +223,6 @@ hr{
     text-decoration-thickness: 1px;
     text-decoration-color: rgba(255,187,15,0.48);
     transition: 0.4s;
-  }
-  .body{
-    background-color: #f3f3f3;
   }
   hr{
     display: flex;
