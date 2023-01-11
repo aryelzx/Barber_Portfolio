@@ -1,37 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Vitin do Corte | Agendamento</title>
+  <link rel="icon" href="../img/iconlogo.png">
+  <link rel="stylesheet" href="../css/agendamento.css">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
-<style>
-  body {
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-  }
-  h1 {
-    color: #fff;
-    margin-top: 15rem;
-  }
-  button {
-    border: none;
-    border-radius: 5px;
-    padding: 1rem;
-    margin-top: 1rem;
-    cursor: pointer;
-    color: #f3f3f3;
-    background-image: linear-gradient(45deg, rgb(62, 62, 61), rgb(175, 175, 175));
-  }
-</style>
 <body>
-  <a href="../home.html">
-    <button>HOME</button>
-  </a>
-  <h1>
-    working on it...
-  </h1>
+  <header class="header">
+    <a href="../home.html" class="header-brand"> 
+      <img src="../img/logomobile.png"  alt="Logo Image" class="logomobile">  
+    </a>
+    <nav class="header-navbar">
+        <ul>
+            <li>
+              <a href="../home.html">
+                Início
+              </a>
+            </li>
+            <li>
+              <a href="./servicos.html">
+                Serviços
+              </a>
+            </li>
+            <li>
+              <a href="./contato.html">
+                Contato
+              </a>
+            </li>
+        </ul>
+    </nav>    
+  </header>
+  <hr>
+  <main>
+    <div class="modal">
+      <div class="informacoes">
+        <img src="../img/img1.jpeg" alt="Profile Image">
+        <h1>Agende um Horário</h1>
+        <hr>
+        <p>Para agendar um horário, clique no botão abaixo.</p>
+        <a href="https://wa.me/5585992618797?text=Ol%C3%A1%2C+Gostaria+de+agendar+um+hor%C3%A1rio+para+corte+de+cabelo.+%F0%9F%98%83" target="_blank" class="btn">
+          <img src="../img/whatsapp-3.svg" alt="Whatsapp Image">
+          Agendar
+        </a>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
