@@ -1,4 +1,5 @@
-![vitindocorte](https://user-images.githubusercontent.com/84799845/209154376-d8a66b8b-8c09-482a-809f-092a40eba697.jpg)
+![vitindocorte](https://user-images.githubusercontent.com/84799845/211898844-26f92ae3-f7d2-4015-86de-5e7ca458d57b.png)
+
 
 # Barber Portfolio
 
