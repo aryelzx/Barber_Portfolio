@@ -188,7 +188,9 @@ hr{
 }
 /* ======== MEDIA ============= */
 @media screen and (max-width: 768px) {
-  
+   aside p{
+    display: none;
+  }
   .header {
     display: flex;
     flex-direction: column;
